@@ -1,0 +1,17 @@
+# Unreal Engine
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Visual Studio / Rider
+.vs/
+.vscode/
+*.sln
+*.opensdf
+*.sdf
+*.VC.db
+
+# OS junk
+.DS_Store
+Thumbs.db
