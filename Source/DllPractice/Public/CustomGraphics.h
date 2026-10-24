@@ -12,18 +12,33 @@ class DLLPRACTICE_API UCustomGraphics : public UGameUserSettings
 {
 	GENERATED_BODY()
 
+/*
+* Public functions that will hold signatures of what
+* each function value should hold
+*/
 public:
-	UFUNCTION(BlueprintCallable)
-	void SetGraphicsValue(int32 NewValue);
+	UFUNCTION(BlueprintCallable, Category = "Improved Game User Settings|Set Graphics")
+	void SetTextureValue(int32 NewValue);
+	UFUNCTION(BlueprintCallable, Category = "Improved Game User Settings|Set Graphics")
+	void SetIlluminationValue(int32 NewValue);
+	UFUNCTION(BlueprintCallable, Category = "Improved Game User Settings|Set Graphics")
+	void SetViewDistanceValue(int32 NewValue);
 
-	UFUNCTION(BlueprintPure)
-	int32 GetGraphicsValue() const;
+	UFUNCTION(BlueprintPure, Category = "Improved Game User Settings|Get Graphics")
+	int32 GetTextureValue() const;
+	UFUNCTION(BlueprintPure, Category = "Improved Game User Settings|Get Graphics")
+	int32 GetIlluminationValue() const;
+	UFUNCTION(BlueprintPure, Category = "Improved Game User Settings|Get Graphics")
+	int32 GetViewDistanceValue() const;
 
 	UCustomGraphics(const FObjectInitializer& ObjectInitializer);
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "Improved Game User Settings|Custom Settings")
 	static UCustomGraphics* ImprovedGameUserSettings();
 
+//Protected variables that hold each graphic value
 protected:
-	int32 GraphicsValue;
+	int32 TextureValue;
+	int32 GlobalIlluminationValue;
+	int32 ViewDistanceValue;
 };
