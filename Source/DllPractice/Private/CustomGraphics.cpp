@@ -12,6 +12,14 @@ UCustomGraphics::UCustomGraphics(const FObjectInitializer& ObjectInitializer) : 
 	ViewDistanceValue = 0;
 	GlobalIlluminationValue = 0;
 	TextureValue = 0;
+	AntiAliasingValue = 0;
+	PostProcessValue = 0;
+	ShadowsValue = 0;
+	ReflectionsValue = 0;
+	EffectsValue = 0;
+	FoliageValue = 0;
+	LandscapeValue = 0;
+	ShadingValue = 0;
 }
 
 /*
@@ -37,6 +45,120 @@ void UCustomGraphics::SetViewDistanceValue(int32 NewValue)
 		ViewDistanceValue = 4;
 	}
 }
+//set our view distance value to be newvalue
+void UCustomGraphics::SetAntiAliasingValue(int32 NewValue)
+{
+	AntiAliasingValue = NewValue;
+	//Clamps value between 0-4
+	if (AntiAliasingValue < 0)
+	{
+		AntiAliasingValue = 0;
+	}
+	else if (AntiAliasingValue > 4)
+	{
+		AntiAliasingValue = 4;
+	}
+}
+
+void UCustomGraphics::SetPostProcessValue(int32 NewValue)
+{
+	PostProcessValue = NewValue;
+	//Clamps value between 0-4
+	if (PostProcessValue < 0)
+	{
+		PostProcessValue = 0;
+	}
+	else if (PostProcessValue > 4)
+	{
+		PostProcessValue = 4;
+	}
+}
+
+void UCustomGraphics::SetShadowsValue(int32 NewValue)
+{
+	ShadowsValue = NewValue;
+	//Clamps value between 0-4
+	if (ShadowsValue < 0)
+	{
+		ShadowsValue = 0;
+	}
+	else if (ShadowsValue > 4)
+	{
+		ShadowsValue = 4;
+	}
+}
+
+void UCustomGraphics::SetReflectionsValue(int32 NewValue)
+{
+	ReflectionsValue = NewValue;
+	//Clamps value between 0-4
+	if (ReflectionsValue < 0)
+	{
+		ReflectionsValue = 0;
+	}
+	else if (ReflectionsValue > 4)
+	{
+		ReflectionsValue = 4;
+	}
+}
+
+void UCustomGraphics::SetEffectsValue(int32 NewValue)
+{
+	EffectsValue = NewValue;
+	//Clamps value between 0-4
+	if (EffectsValue < 0)
+	{
+		EffectsValue = 0;
+	}
+	else if (EffectsValue > 4)
+	{
+		EffectsValue = 4;
+	}
+}
+
+void UCustomGraphics::SetFoliageValue(int32 NewValue)
+{
+	FoliageValue = NewValue;
+	//Clamps value between 0-4
+	if (FoliageValue < 0)
+	{
+		FoliageValue = 0;
+	}
+	else if (FoliageValue > 4)
+	{
+		FoliageValue = 4;
+	}
+}
+
+void UCustomGraphics::SetLandscapeValue(int32 NewValue)
+{
+	LandscapeValue = NewValue;
+	//Clamps value between 0-4
+	if (LandscapeValue < 0)
+	{
+		LandscapeValue = 0;
+	}
+	else if (LandscapeValue > 4)
+	{
+		LandscapeValue = 4;
+	}
+}
+
+void UCustomGraphics::SetShadingValue(int32 NewValue)
+{
+	ShadingValue = NewValue;
+	//Clamps value between 0-4
+	if (ShadingValue < 0)
+	{
+		ShadingValue = 0;
+	}
+	else if (ShadingValue > 4)
+	{
+		ShadingValue = 4;
+	}
+}
+
+
 
 //Set our global illumination value to be new value
 void UCustomGraphics::SetIlluminationValue(int32 NewValue)
@@ -68,6 +190,8 @@ void UCustomGraphics::SetTextureValue(int32 NewValue)
 	}
 }
 
+
+
 //Get our texture set texture value
 int32 UCustomGraphics::GetTextureValue() const
 {
@@ -85,6 +209,60 @@ int32 UCustomGraphics::GetViewDistanceValue() const
 {
 	return ViewDistanceValue;
 }
+
+int32 UCustomGraphics::GetAntiAliasingValue() const
+{
+	return AntiAliasingValue;
+}
+
+int32 UCustomGraphics::GetPostProcessValue() const
+{
+	return PostProcessValue;
+}
+
+int32 UCustomGraphics::GetReflectionsValue() const
+{
+	return ReflectionsValue;
+}
+
+int32 UCustomGraphics::GetEffectsValue() const
+{
+	return EffectsValue;
+}
+
+int32 UCustomGraphics::GetFoliageValue() const
+{
+	return FoliageValue;
+}
+
+int32 UCustomGraphics::GetLandscapeValue() const
+{
+	return LandscapeValue;
+}
+
+int32 UCustomGraphics::GetShadingValue() const
+{
+	return ShadingValue;
+}
+
+int32 UCustomGraphics::GetShadowsValue() const
+{
+	return ShadowsValue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

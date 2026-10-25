@@ -23,6 +23,23 @@ public:
 	void SetIlluminationValue(int32 NewValue);
 	UFUNCTION(BlueprintCallable, Category = "Improved Game User Settings|Set Graphics")
 	void SetViewDistanceValue(int32 NewValue);
+	UFUNCTION(BlueprintCallable, Category = "Improved Game User Settings|Set Graphics")
+	void SetAntiAliasingValue(int32 NewValue);
+	UFUNCTION(BlueprintCallable, Category = "Improved Game User Settings|Set Graphics")
+	void SetPostProcessValue(int32 NewValue);
+	UFUNCTION(BlueprintCallable, Category = "Improved Game User Settings|Set Graphics")
+	void SetShadowsValue(int32 NewValue);
+	UFUNCTION(BlueprintCallable, Category = "Improved Game User Settings|Set Graphics")
+	void SetReflectionsValue(int32 NewValue);
+	UFUNCTION(BlueprintCallable, Category = "Improved Game User Settings|Set Graphics")
+	void SetEffectsValue(int32 NewValue);
+	UFUNCTION(BlueprintCallable, Category = "Improved Game User Settings|Set Graphics")
+	void SetFoliageValue(int32 NewValue);
+	UFUNCTION(BlueprintCallable, Category = "Improved Game User Settings|Set Graphics")
+	void SetLandscapeValue(int32 NewValue);
+	UFUNCTION(BlueprintCallable, Category = "Improved Game User Settings|Set Graphics")
+	void SetShadingValue(int32 NewValue);
+
 
 	UFUNCTION(BlueprintPure, Category = "Improved Game User Settings|Get Graphics")
 	int32 GetTextureValue() const;
@@ -30,6 +47,22 @@ public:
 	int32 GetIlluminationValue() const;
 	UFUNCTION(BlueprintPure, Category = "Improved Game User Settings|Get Graphics")
 	int32 GetViewDistanceValue() const;
+	UFUNCTION(BlueprintPure, Category = "Improved Game User Settings|Get Graphics")
+	int32 GetAntiAliasingValue() const;
+	UFUNCTION(BlueprintPure, Category = "Improved Game User Settings|Get Graphics")
+	int32 GetPostProcessValue() const;
+	UFUNCTION(BlueprintPure, Category = "Improved Game User Settings|Get Graphics")
+	int32 GetReflectionsValue() const;
+	UFUNCTION(BlueprintPure, Category = "Improved Game User Settings|Get Graphics")
+	int32 GetEffectsValue() const;
+	UFUNCTION(BlueprintPure, Category = "Improved Game User Settings|Get Graphics")
+	int32 GetFoliageValue() const;
+	UFUNCTION(BlueprintPure, Category = "Improved Game User Settings|Get Graphics")
+	int32 GetLandscapeValue() const;
+	UFUNCTION(BlueprintPure, Category = "Improved Game User Settings|Get Graphics")
+	int32 GetShadingValue() const;
+	UFUNCTION(BlueprintPure, Category = "Improved Game User Settings|Get Graphics")
+	int32 GetShadowsValue() const;
 
 	UCustomGraphics(const FObjectInitializer& ObjectInitializer);
 
@@ -41,4 +74,12 @@ protected:
 	int32 TextureValue;
 	int32 GlobalIlluminationValue;
 	int32 ViewDistanceValue;
+	int32 AntiAliasingValue;
+	int32 PostProcessValue;
+	int32 ShadowsValue;
+	int32 ReflectionsValue;
+	int32 EffectsValue;
+	int32 FoliageValue;
+	int32 LandscapeValue;
+	int32 ShadingValue;
 };
