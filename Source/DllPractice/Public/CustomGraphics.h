@@ -7,6 +7,7 @@
 #include "CustomGraphics.generated.h"
 
 
+
 UCLASS()
 class DLLPRACTICE_API UCustomGraphics : public UGameUserSettings
 {
@@ -16,6 +17,7 @@ class DLLPRACTICE_API UCustomGraphics : public UGameUserSettings
 * Public functions that will hold signatures of what
 * each function value should hold
 */
+
 public:
 	UFUNCTION(BlueprintCallable, Category = "Improved Game User Settings|Set Graphics")
 	void SetTextureValue(int32 NewValue);
@@ -39,6 +41,11 @@ public:
 	void SetLandscapeValue(int32 NewValue);
 	UFUNCTION(BlueprintCallable, Category = "Improved Game User Settings|Set Graphics")
 	void SetShadingValue(int32 NewValue);
+
+	UFUNCTION(BlueprintCallable, Category = "Improved Game User Settings|Scalability Settings")
+	void CustomGameSettings(int32 Texture,int32 Effects, int32 PostProcess,int32 Shadows,int32 Shading,
+		int32 Foliage, int32 Illumination, int32 ViewDistance, int32 AntiAlising, int32 Reflections, int32 Landscape);
+	
 
 
 	UFUNCTION(BlueprintPure, Category = "Improved Game User Settings|Get Graphics")
@@ -70,7 +77,7 @@ public:
 	static UCustomGraphics* ImprovedGameUserSettings();
 
 //Protected variables that hold each graphic value
-protected:
+private:
 	int32 TextureValue;
 	int32 GlobalIlluminationValue;
 	int32 ViewDistanceValue;

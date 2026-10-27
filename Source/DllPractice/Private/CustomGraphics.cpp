@@ -158,6 +158,23 @@ void UCustomGraphics::SetShadingValue(int32 NewValue)
 	}
 }
 
+void UCustomGraphics::CustomGameSettings(int32 Texture, int32 Effects, int32 PostProcess, 
+	int32 Shadows, int32 Shading, int32 Foliage, int32 Illumination, int32 ViewDistance, 
+	int32 AntiAlising, int32 Reflections, int32 Landscape)
+{
+	TextureValue = Texture;
+	EffectsValue = Effects;
+	PostProcessValue = PostProcess;
+	ShadowsValue = Shadows;
+	ShadingValue = Shading;
+	FoliageValue = Foliage;
+	GlobalIlluminationValue = Illumination;
+	ViewDistanceValue = ViewDistance;
+	AntiAliasingValue = AntiAlising;
+	ReflectionsValue = Reflections;
+	LandscapeValue = Landscape;
+}
+
 
 
 //Set our global illumination value to be new value
