@@ -14,6 +14,8 @@ void UCustomAwards::SetAward(FString LangCode)
 	NewAwardName = LangCode;
 }
 
+
+//This returns the instance of UCustomAwards
 UCustomAwards* UCustomAwards::PlayerAchievementName()
 {
 	UObject* PlayerAwards = (UObject*)GetTransientPackage();

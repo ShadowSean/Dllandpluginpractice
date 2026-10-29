@@ -172,7 +172,7 @@ void UCustomGraphics::CustomGameSettings(int32 Texture, int32 Effects, int32 Pos
 	ViewDistanceValue = ViewDistance;
 	AntiAliasingValue = AntiAlising;
 	ReflectionsValue = Reflections;
-	LandscapeValue = Landscape;
+	LandscapeValue = Landscape;	
 }
 
 
