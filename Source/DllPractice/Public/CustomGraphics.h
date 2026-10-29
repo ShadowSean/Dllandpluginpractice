@@ -76,7 +76,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Improved Game User Settings|Custom Settings")
 	static UCustomGraphics* ImprovedGameUserSettings();
 
-//Protected variables that hold each graphic value
+//Private variables that hold each graphic value
 private:
 	int32 TextureValue;
 	int32 GlobalIlluminationValue;
