@@ -29,7 +29,7 @@ One Blueprint to Rule Them All! Creating a Global Music Manager in Unreal Engine
 
 ## Factory: PCG Room Generator
 
-This Unreal Engine project uses **PCG and Blueprints** to furnish a hotel room. It places a bed, wardrobe, desk, lamp, and bedside tables from placement rules and a random seed, rather than choosing from a set of premade layouts.
+We use **PCG and Blueprints** to furnish a hotel room. It places a bed, wardrobe, desk, lamp, and bedside tables from placement rules and a random seed, rather than choosing from a set of premade layouts.
 
 ### How it works
 
@@ -39,8 +39,8 @@ The **Factory Method** part is used to create the furniture. PCG spawns a furnit
 
 ### PCG graph
 
-<img width="1067" height="396" alt="Screenshot 2026-10-29 205739" src="https://github.com/user-attachments/assets/4e97bc86-c29e-46b2-8b27-adb70bd075be" />
 <img width="1105" height="517" alt="Screenshot 2026-10-29 205733" src="https://github.com/user-attachments/assets/15e9e2fb-e289-40db-ac20-8cc4ac3cd81d" />
+<img width="1067" height="396" alt="Screenshot 2026-10-29 205739" src="https://github.com/user-attachments/assets/4e97bc86-c29e-46b2-8b27-adb70bd075be" />
 <img width="4311" height="4368" alt="Room_Factory_Diagram_4K" src="https://github.com/user-attachments/assets/f664e1bd-8604-4b53-bece-6c67340d44af" />
 
 **AI assistance:** I ( Isshan ) used AI to find and understand the PCG nodes needed to check candidate furniture positions against world collision. I then connected and tested the World Volumetric Query with Intersection in my room generator to filter out blocked positions.
@@ -56,5 +56,7 @@ This factory (which hasn't yet been implemented) would've been responsible for s
 ## Future Implementations
 
 **Singleton:** One shared Hotel Manager Blueprint will coordinate both room and floor generation.
+
 **Factory:** Room factories will create different room types, such as a normal room and a scenic room. The factory system could later expand to floor layouts and the hotel exterior.
+
 **Plugin and DLL:** We plan to package the finished PCG tool as a reusable plugin for other Unreal projects. We are still deciding what additional functionality it should include.
