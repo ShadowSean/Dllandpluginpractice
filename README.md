@@ -19,6 +19,12 @@ This factory+singleton, that is referenced by the Master Game Instance which cre
 
 The original prototyping and concept used the YouTube video linked below. Claude AI was used to check program logic and debug the initial prototype of the manager inside of a different project. To expand upon the content of the sources, the Factory framework was implemented by abstracting the reference outside of BP_AudioManager and playing the reference inside of the manager, as well as functionality for crossfading between tracks using a reference to the currently playing song to ensure music and SFX don't overlap while leaving room for a fade out during scene transitions rather than a harsh transition.
 
+## Singleton UML Graphs
+<img width="1616" height="493" alt="image" src="https://github.com/user-attachments/assets/db5f33fb-c909-4205-b45b-e41860cdb4df" />
+<img width="794" height="459" alt="image" src="https://github.com/user-attachments/assets/fc2a56ad-6f6f-4060-b2a8-6289fdad596a" />
+
+
+
 ![BP_AudioManager](<Screenshot 2026-10-29 205941.png>)
 ![Master_GameInstance_Manager](<Screenshot 2026-10-29 205947.png>)
 ![Level Blueprint](<Screenshot 2026-10-29 210051.png>)
