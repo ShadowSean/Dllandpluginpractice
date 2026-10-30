@@ -23,7 +23,9 @@ The original prototyping and concept used the YouTube video linked below. Claude
 ![Master_GameInstance_Manager](<Screenshot 2026-10-29 205947.png>)
 ![Level Blueprint](<Screenshot 2026-10-29 210051.png>)
 
-![Onehttps://youtu.be/bt3lXwztrO4
+One Blueprint to Rule Them All! Creating a Global Music Manager in Unreal Engine 5 - Thank Me Later: https://youtu.be/bt3lXwztrO4
+![Blueprints made with above ref + AI Debugging](<Screenshot 2026-10-29 211600.png>)
+!**No AI was used for the implementation inside of the final project. Only in the test project as shown in the image above**!
 
 ## Factory: PCG Room Generator
 
