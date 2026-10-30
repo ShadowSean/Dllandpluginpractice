@@ -14,8 +14,16 @@ This singleton is responsible for distributing game awards to the player.
 
 ## Factory & Singleton: Audio Manager
 
-This factory+singleton, that is referenced by the Master Game Instance, and accessible from anywhere in the code, is responsible for allowing and managing the playback of audio, and reducing audio overlap. It is also considered a factory, due to the fact that it spawns in the audio objects without knowing what sound it is.
-[insert img here]
+
+This factory+singleton, that is referenced by the Master Game Instance which creates only one instance of BP_AudioManager on initialization, and is accessible from anywhere in the code, is responsible for allowing and managing the playback of audio, and reducing audio overlap. It is also considered a factory, due to the fact that it spawns in the audio objects without knowing what sound it is.
+
+The original prototyping and concept used the YouTube video linked below. Claude AI was used to check program logic and debug the initial prototype of the manager inside of a different project. To expand upon the content of the sources, the Factory framework was implemented by abstracting the reference outside of BP_AudioManager and playing the reference inside of the manager, as well as functionality for crossfading between tracks using a reference to the currently playing song to ensure music and SFX don't overlap while leaving room for a fade out during scene transitions rather than a harsh transition.
+
+![BP_AudioManager](<Screenshot 2026-10-29 205941.png>)
+![Master_GameInstance_Manager](<Screenshot 2026-10-29 205947.png>)
+![Level Blueprint](<Screenshot 2026-10-29 210051.png>)
+
+![Onehttps://youtu.be/bt3lXwztrO4
 
 ## Factory: PCG Room Generator
 
